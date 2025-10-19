@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: kravitz;
+    src: url(Font/KRAVITZ_.TTF);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(Font/Avenir-LightOblique.otf);
+}
+
+body {
+	background-color: #EEEEEE;
+} 
+
+img {
+	width: 8%;
+}
+
+h1 {
+	font-family: "kravitz";
+	/* MIN size, PREFERRED scalable size, MAX size */
+	font-size: clamp(2.5rem, 15vw, 8rem);
+	cursor: default;
+	text-align: center;
+}
+
+p {
+	font-family:"Avenir" ; 
+	font-size: 150% ;
+	cursor: default;
+}
+
+#incrocio {
+	width: 100%;
+    padding: 1%;  /* bordo fra immagine e popup */
+}
+
+#testo {
+	 visibility: hidden;
+}
+
+
+
+/* per popup */ 
+
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.overlay-bg {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	cursor: pointer;
+	z-index: 1000; /* high z-index */
+	background: #000; /* fallback */
+	background: rgba(0,0,0,0.75);
+}
+	.overlay-content {
+		display: none;
+		background: #EEEEEE;
+		padding: 1%;
+		width: 40%;
+		position: absolute;
+		top: 5%;
+		left: 50%;
+		margin: 0 0 0 -20%; /* add negative left margin for half the width to center the div */
+		cursor: default;
+		z-index: 10001;
+		border-radius: 15px;  /*quanto tondi gli spigoli*/
+		box-shadow: 0 0 5px rgba(0,0,0,0.9);
+	}
+
+/* media query for most mobile devices */
+@media only screen and (min-width: 0px) and (max-width: 480px){
+
+	.overlay-content {
+		width: 96%;
+		margin: 0 2%;
+		left: 0;
+	}
+}
+
+
+
+
+

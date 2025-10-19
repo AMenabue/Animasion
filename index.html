@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="./icone/IconaTab.png"> 	<!-- per icona della scheda -->
+
+<meta charset="utf-8"> <!-- caratteri accentati -->
+
+<meta content="width=320px, initial-scale=1, user-scalable=yes" name="viewport" /> 		<!-- entrambi per popup -->
+<link type="text/css" rel="stylesheet" href="tuttocss.css" />  
+
+<title>Animasion</title>
+</head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>		<!-- per popup -->
+<script type="text/javascript" src="TuttoJavascript.js"> </script> 
+
+<body	onload="tuttiOnLoad()"	>
+
+<h1 align = center 	>Animasion</h1>	
+<p 	align = center	>Incrociali tutti!</p>
+<p align = center style="font-size: 1rem; color: #666;">(Un progetto del 2017)</p> 
+</br>
+
+<!-- ICONE -->
+<div align = center	>	
+	<img src="./icone/aquila.png" 		id="aquila"			onClick="changeImage(id)" 	/>  
+	<img src="./icone/ariete.png" 		id="ariete"			onClick="changeImage(id)" 	/> 
+	<img src="./icone/bradipo.png" 		id="bradipo" 		onClick="changeImage(id)" 	/>
+	<img src="./icone/bufalo.png" 		id="bufalo" 		onClick="changeImage(id)" 	/>
+	<img src="./icone/camaleonte.png" 	id="camaleonte"		onClick="changeImage(id)" 	/> 
+	<img src="./icone/cane.png" 		id="cane" 			onClick="changeImage(id)"	/>
+	<img src="./icone/cavallo.png" 		id="cavallo"		onClick="changeImage(id)" 	/>
+	<img src="./icone/cervo,renna.png" 	id="cervo,renna"	onClick="changeImage(id)" 	/> 
+	<img src="./icone/coniglio.png" 	id="coniglio"		onClick="changeImage(id)" 	/>  
+	<img src="./icone/criceto.png" 		id="criceto"		onClick="changeImage(id)" 	/>
+</div>
+
+<div align = center	>
+	<img src="./icone/elefante.png" 	id="elefante"		onClick="changeImage(id)" 	/>
+	<img src="./icone/foca.png" 		id="foca"			onClick="changeImage(id)" 	/>
+	<img src="./icone/gallo.png" 		id="gallo" 			onClick="changeImage(id)" 	/>
+	<img src="./icone/gatto.png" 		id="gatto"			onClick="changeImage(id)" 	/> 
+	<img src="./icone/gufo.png" 		id="gufo" 			onClick="changeImage(id)" 	/>
+	<img src="./icone/ippopotamo.png" 	id="ippopotamo"		onClick="changeImage(id)" 	/> 
+	<img src="./icone/leone.png" 		id="leone" 			onClick="changeImage(id)" 	/>
+	<img src="./icone/maiale.png" 		id="maiale"			onClick="changeImage(id)" 	/> 
+	<img src="./icone/orso.png" 		id="orso" 			onClick="changeImage(id)" 	/>
+	<img src="./icone/panda.png" 		id="panda" 			onClick="changeImage(id)" 	/>
+	<img src="./icone/papera.png" 		id="papera"			onClick="changeImage(id)" 	/> 
+</div>
+
+<div align = center	>	
+	<img src="./icone/pecora.png" 		id="pecora" 		onClick="changeImage(id)" 	/>
+	<img src="./icone/pinguino.png" 	id="pinguino"		onClick="changeImage(id)" 	/>
+	<img src="./icone/rana.png" 		id="rana" 			onClick="changeImage(id)" 	/>
+	<img src="./icone/riccio.png" 		id="riccio" 		onClick="changeImage(id)" 	/>
+	<img src="./icone/scimmia.png" 		id="scimmia"		onClick="changeImage(id)" 	/> 
+	<img src="./icone/scoiattolo.png" 	id="scoiattolo"		onClick="changeImage(id)" 	/>
+	<img src="./icone/tigre.png" 		id="tigre"			onClick="changeImage(id)" 	/>
+	<img src="./icone/topo.png" 		id="topo"			onClick="changeImage(id)" 	/>
+	<img src="./icone/uccello.png" 		id="uccello"		onClick="changeImage(id)" 	/>
+	<img src="./icone/volpe.png" 		id="volpe" 			onClick="changeImage(id)" 	/>
+</div>
+
+<!-- POPUP -->
+<div 	class = "overlay-bg"	>	</div>
+
+<div 	class = "overlay-content popup1"	>
+    <img   id = "incrocio"	/>
+	</br> 
+	<p	align = "center" id="incrocio2"	>Popup serio: Quì uscirà l'incrocio</p>
+</div>
+
+<!-- AGGIUNTIVI -->
+<div 	id = "agguntivi"  align = center	>
+	</br>
+	<p	id = "testo" >Aggiuntivi:</p>
+</div>
+
+
+</body>
+</html>
